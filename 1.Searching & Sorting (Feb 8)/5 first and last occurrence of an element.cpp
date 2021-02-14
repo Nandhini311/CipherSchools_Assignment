@@ -7,7 +7,7 @@ int firstOccurence(int arr[], int x, int n)
     while(low<=high)
     {
         int mid=(low+high)/2;
-        if(mid==0||arr[mid-1]!=arr[mid])
+        if(mid==0||arr[mid-1]!=arr[mid]&&arr[mid]==x)
           return mid;
         else if(arr[mid]<x)
            low=mid+1;
@@ -22,7 +22,7 @@ int lastOccurence(int arr[], int x, int n)
     while(low<=high)
     {
         int mid=(low+high)/2;
-        if(mid==n-1||arr[mid+1]!=arr[mid])
+        if(mid==n-1||arr[mid+1]!=arr[mid]&&arr[mid]==x)
           return mid;
         else if(arr[mid]>x)
            high=mid-1;
