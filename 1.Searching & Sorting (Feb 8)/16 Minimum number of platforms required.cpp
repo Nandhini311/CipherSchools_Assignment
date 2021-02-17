@@ -9,7 +9,6 @@ int findPlatform(int arr[], int dep[], int n)
         plat_needed = 1;
  
         for (int j = i + 1; j < n; j++) {
-            // check for overlap
             if ((arr[i] >= arr[j] && arr[i] <= dep[j]) || 
            (arr[j] >= arr[i] && arr[j] <= dep[i]))
                 plat_needed++;
