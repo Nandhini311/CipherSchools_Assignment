@@ -2,6 +2,7 @@
 using namespace std;
 int MaxSubarray(int arr[], int n)
 {
+    //kadane's algorithm 
     int res = 0;
 	int Max = arr[0];
 	for(int i=1;i<n;i++)
