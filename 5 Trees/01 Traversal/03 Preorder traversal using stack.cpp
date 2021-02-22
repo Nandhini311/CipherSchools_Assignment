@@ -18,7 +18,7 @@ void preorder(Node* root)
     Node* curr = root;
     stack <Node*> s;
     s.push(curr);
-    if(s.empty()==NULL)
+    if(s.empty()==false)
     {
     curr = s.top();
     cout<<curr->data<<endl;
